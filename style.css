@@ -1,0 +1,95 @@
+body {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: #000;
+}
+h1{
+    font-size: 42px;
+    color: white;
+}
+#botoes button{
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    background-color: white;
+}
+#jogo{
+    display: flex;
+    width: 300px;
+    margin: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box {
+    height: 100px;
+    border: 5px solid white;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+#bloco-1, #bloco-2, #bloco-3{
+    border-top: none;
+}
+#bloco-1, #bloco-4, #bloco-7{
+    border-left: none;
+}
+#bloco-7, #bloco-8, #bloco-9{
+    border-bottom: none;
+}
+#bloco-3, #bloco-6, #bloco-9{
+    border-right: none;
+}
+.x {
+    font-size: 65px;
+    color: greenyellow;
+    display: inline-block;
+    line-height: 100px;
+}
+.o {
+    width: 50px;
+    height: 50px;
+    border: 5px solid red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px;
+}
+#placar{
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.caixa-placar{
+    margin: 0 20px;
+}
+#player-x{
+    color: greenyellow;
+    margin-right: 3px;
+}
+#player-o{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+#msg p{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 150px;
+    width: 500px;
+    font-size: 50px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: none;
+}
