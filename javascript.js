@@ -20,12 +20,12 @@ for (let i = 0; i < boxes.length; i++) {
             if(player1 == player2){
             player1++;
             } 
+            else {
+            player2++;
+            }
             if(segundoJogador == "player-ia") {
                 computerplayer();
                 player2++;
-            }
-            else {
-            player2++;
             }
             quemGanhou()
         }
